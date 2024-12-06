@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clippers Fan Profile</title>
+  <link href="../styles/webapp.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Clippers Fan Profile</h1>
+    <p>Fill out your profile and share your favorite Clippers player!</p>
+  </header>
+  
+  <section id="profile-form">
+    <form id="fanProfileForm">
+      <label for="playerName">Favorite Player:</label>
+      <input type="text" id="playerName" name="playerName" placeholder="Enter Player's Name" required>
+      
+      <label for="gamesAttended">Games Attended:</label>
+      <input type="number" id="gamesAttended" name="gamesAttended" placeholder="How many games have you attended?" required>
+      
+      <label for="bestMoment">Best Moment:</label>
+      <textarea id="bestMoment" name="bestMoment" placeholder="Describe your best Clippers game moment." required></textarea>
+      
+      <button type="button" onclick="submitProfile()">Submit Profile</button>
+    </form>
+  </section>
+
+  <section id="profile-display">
+    <h2>Your Profile</h2>
+    <p><strong>Favorite Player:</strong> <span id="displayPlayerName">--</span></p>
+    <p><strong>Games Attended:</strong> <span id="displayGamesAttended">--</span></p>
+    <p><strong>Best Moment:</strong> <span id="displayBestMoment">--</span></p>
+  </section>
+
+  <footer>
+    <p>Created by Clippers Fan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function submitProfile() {
+      // Get the values from the form inputs
+      var playerName = document.getElementById('playerName').value;
+      var gamesAttended = document.getElementById('gamesAttended').value;
+      var bestMoment = document.getElementById('bestMoment').value;
+
+      // Display the inputted values in the profile section
+      document.getElementById('displayPlayerName').innerText = playerName;
+      document.getElementById('displayGamesAttended').innerText = gamesAttended;
+      document.getElementById('displayBestMoment').innerText = bestMoment;
+
+      // Clear the form fields after submission
+      document.getElementById('fanProfileForm').reset();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Set a background image */
+body {
+  background-image: url('https://path-to-your-image.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0;
+  color: rgb(161, 193, 234); /* Clippers color (gold) */
+}
+
+p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #f4f4f4;
+}
+
+#profile-form {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for the form */
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 1.2em;
+  color: rgb(161, 193, 234); /* Clippers color (gold) */
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(161, 193, 234); /* Clippers color (gold) */
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(161, 193, 234); /* Lighter shade for hover */
+}
+
+#profile-display {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: rgb(161, 193, 234);/* Clippers color (gold) */
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
